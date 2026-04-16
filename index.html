@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BIENVENUE CHEZ ADEWEB — Agence de développement web</title>
+  <meta name="description" content="ADEWEB — Agence de développement web : sites vitrines, e‑commerce, applications web, UI/UX et SEO...ect" />
+
+  <!-- Fonts (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+
+  <link rel="stylesheet" href="accueil.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="">
+
+
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Header: LOGO PNG à gauche + titre centré -->
+  <header>
+    <div class="container header-inner">
+      <!-- Gauche: votre logo PNG -->
+      <div class="brand-left" aria-label="Logo ADEWEB">
+        <!-- IMPORTANT: remplacez le chemin ci-dessous par votre fichier PNG -->
+        <img class="brand-logo" src="logo.png" alt="ADEWEB" />
+      </div>
+
+      <!-- Centre: titre -->
+      <div class="brand-center" aria-label="ADEWEB">
+        <h1>ADEWEB</h1> <p>Agence de développement web</p>
+      </div>
+
+      <!-- Droite: vide (sert à garder le titre parfaitement centré) -->
+      <div aria-hidden="true"></div>
+    </div>
+
+  </header>
+
+
+
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" aria-label="Accueil">
+      <div class="grid">
+        <div class="panel hero-left">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            Design moderne • Performance • SEO • Sécurité
+          </div>
+
+          <h2 class="hero-title">
+          Nous transformons<span class="gradient-text"> vos idées en succès</span><br />
+          digital 
+          </h2>
+
+          <p class="hero-desc">
+          ADEWEB est une nouvelle génération d’agence digitale spécialisée en développement web, applications mobiles, e-commerce et stratégie digitale.
+          Même en tant que nouvelle agence, notre ambition est claire : livrer un travail d'excellence et créer des solutions innovantes qui propulsent votre entreprise. 
+
+          Notre objectif : <strong>plus de visibilité</strong>, <strong>plus de leads</strong> et <strong>plus de ventes</strong> grâce à un produit clair, rapide et mesurable.
+          </p>
+
+          <ul class="bullets" aria-label="Points forts">
+            <li><strong>Délais maîtrisés :</strong> un planning clair, des étapes validées.</li>
+            <li><strong>Qualité :</strong> responsive, accessibilité, bonnes pratiques.</li>
+            <li><strong>Mesure :</strong> tracking (GA4/Matomo), objectifs, tableaux de bord.</li>
+            <li><strong>Accompagnement :</strong> maintenance, évolutions, support.</li>
+          </ul>
+
+          <div class="cta-row">
+            <a class="btn primary" href="https://wa.me/243901733321" title="Demander un devis">
+              <span>Demander un devis</span><span aria-hidden="true">→</span>
+            </a>
+            <a class="btn" href="https://wa.me/243901733321" title="Contactez-nous">
+              <span>Contactez-nous</span><span aria-hidden="true">✦</span>
+            </a>
+            <a class="btn" href="projet.html" title="Voir nos projets">
+              <span>Voir nos projets</span><span aria-hidden="true">↗</span>
+            </a>
+           <a class="btn" href="en savoir plus sur nos services.html" title="en savoir plus sur nous">
+              <span>en savoir plus sur nous</span><span aria-hidden="true">↗</span>
+            </a>
+           
+          </div>
+
+          <div class="trust-row" aria-label="Réassurance">
+            <div class="trust-item">Livraison <strong>responsive</strong></div>
+            <div class="trust-item">SEO <strong>on‑page</strong></div>
+            <div class="trust-item">Code <strong>maintenable</strong></div>
+            <div class="trust-item">Support <strong>réactif</strong></div>
+          </div>
+        </div>
+
+        <div class="panel hero-right" aria-label="Aperçu">
+          <div class="mock">
+            <div class="mock-top">
+              <div class="pills" aria-hidden="true">
+                <span class="pill"></span><span class="pill"></span><span class="pill"></span>
+              </div>
+              <div class="mock-badge">Production-ready • Responsive</div>
+            </div>
+
+            <div class="mock-body">
+              <div class="stat-row">
+                <div class="stat">
+                  <strong data-count="60">0</strong>
+                  <span>vitesse perçue</span>
+                </div>
+                <div class="stat">
+                  <strong>UI/UX</strong>
+                  <span>design clair & moderne</span>
+                </div>
+              </div>
+
+              <div class="bars" aria-label="Indicateurs">
+                <div class="barline" aria-hidden="true"></div>
+                <div class="bars-inner" aria-hidden="true">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+
+              <div class="stat-row">
+                <div class="stat">
+                  <strong>SEO</strong>
+                  <span>structure + contenu</span>
+                </div>
+                <div class="stat">
+                  <strong>Support</strong>
+                  <span>maintenance & évolutions</span>
+                </div>
+              </div>
+
+              <div class="mini-note">
+                <strong>Astuce :</strong> un site rapide + une offre claire + un suivi des conversions = plus de résultats.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS (animated) -->
+    <section class="stats-section" aria-label="Chiffres clés">
+      <div class="panel stats-panel reveal">
+        <div class="stats-grid">
+          <div class="kpi">
+            <div class="kpi-num"><span data-kpi="0">0</span>+</div>
+            <div class="kpi-label">pages & parcours optimisés</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-num"><span data-kpi="35">0</span>%</div>
+            <div class="kpi-label">gain moyen sur le temps de chargement</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-num"><span data-kpi="24">0</span>h</div>
+            <div class="kpi-label">délai moyen de réponse support</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-num"><span data-kpi=""></span></div>
+            <div class="kpi-label">Engagement qualite</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="nav-section" id="services" aria-label="Services">
+      <div class="section-title reveal">
+        <h2>Des services pensés pour convertir</h2>
+        <p>Chaque livrable est orienté performance, clarté et résultats mesurables.</p>
+      </div>
+
+      <div class="nav-grid" id="navGrid">
+        <a class="nav-card" href="https://wa.me/243901733321">
+          <div class="label">Sites vitrines</div>
+          <div class="sub">Une présence crédible, rapide et orientée contact</div>
+        </a>
+        <a class="nav-card">
+          <div class="label">E‑commerce</div>
+          <div class="sub">Catalogue, paiement, livraison, e‑mailing, SEO</div>
+        </a>
+        <a class="nav-card">
+          <div class="label">Applications web</div>
+          <div class="sub">Dashboards, comptes clients, back‑office</div>
+        </a>
+        <a class="nav-card">
+          <div class="label">UI/UX</div>
+          <div class="sub">Parcours, maquettes, design system</div>
+        </a>
+        <a class="nav-card">
+          <div class="label">SEO</div>
+          <div class="sub">Structure, contenus, technique, performance</div>
+        </a>
+        <a class="nav-card" href="https://wa.me/243901733321">
+          <div class="label">Maintenance</div>
+          <div class="sub">Mises à jour, sécurité, sauvegardes</div>
+        </a>
+        <a class="nav-card" href="projet.php">
+          <div class="label">Projets</div>
+          <div class="sub">Études de cas & réalisations</div>
+        </a>
+        <a class="nav-card" href="#faq">
+          <div class="label">FAQ</div>
+          <div class="sub">Réponses rapides avant de démarrer</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROJETS (filter) -->
+    <section class="projects-section" id="projets" aria-label="Projets">
+      <div class="section-title reveal">
+        <h2>Projets récents (exemples)</h2>
+        <p>Filtrez par type : vitrine, e‑commerce, application. (Démo côté front)</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filtrer les projets">
+        <button class="chip active" type="button" data-filter="all" role="tab" aria-selected="true">Tous</button>
+        <button class="chip" type="button" data-filter="vitrine" role="tab" aria-selected="false">Vitrine</button>
+        <button class="chip" type="button" data-filter="ecommerce" role="tab" aria-selected="false">E‑commerce</button>
+        <button class="chip" type="button" data-filter="app" role="tab" aria-selected="false">Application</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal" data-type="vitrine">
+          <h3>Cabinet conseil</h3>
+          <p>Refonte + optimisation SEO + pages service. Objectif : demandes de RDV.</p>
+          <div class="tags"><span>SEO</span><span>UI/UX</span><span>Perf</span></div>
+        </article>
+
+        <article class="project-card reveal" data-type="ecommerce">
+          <h3>Boutique artisanale</h3>
+          <p>Catalogue, paiements, e‑mails, suivi des conversions.</p>
+          <div class="tags"><span>E‑commerce</span><span>Tracking</span></div>
+        </article>
+
+        <article class="project-card reveal" data-type="app">
+          <h3>Dashboard interne</h3>
+          <p>Tableaux de bord, rôles, exports, KPI. Gain de temps opérationnel.</p>
+          <div class="tags"><span>App</span><span>Back‑office</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process-section" id="process" aria-label="Notre méthode">
+      <div class="section-title reveal">
+        <h2>Une méthode simple, claire, efficace</h2>
+        <p>Vous savez toujours où on en est, ce qui arrive ensuite, et pourquoi.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>Cadrage</h3>
+          <p>Objectifs, cibles, pages, fonctionnalités, messages clés. On aligne le projet sur vos priorités business.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <h3>Design UI/UX</h3>
+          <p>Wireframes, maquettes, hiérarchie visuelle, CTA. On construit un parcours qui convertit.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <h3>Développement</h3>
+          <p>Intégration responsive, performance, accessibilité, SEO technique. Code propre et maintenable.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">04</div>
+          <h3>Mise en ligne</h3>
+          <p>Checklist : sécurité, sauvegardes, suivi, indexation, redirections. On déploie sans stress.</p>
+        </div>
+      </div>
+    </section>
+
+
+<!-- CAROUSEL -->
+<section class="mt-10 flex justify-center">
+<div class="carousel w-full max-w-xl">
+<img src="https://picsum.photos/800/400?1" class="active w-full rounded-lg">
+<img src="https://picsum.photos/800/400?2" class="w-full rounded-lg">
+<img src="https://picsum.photos/800/400?3" class="w-full rounded-lg">
+</div>
+</section>
+
+
+
+
+    <!-- AVIS -->
+    <section class="testimonials-section" id="avis" aria-label="Avis clients">
+      <div class="section-title reveal">
+        <h2>Ils nous font confiance</h2>
+        <p>Des retours orientés résultat (clarté, rapidité, impact).</p>
+      </div>
+
+
+
+      <div class="testimonials-grid">
+        <figure class="quote reveal">
+          <blockquote>“Site livré rapidement, super fluide sur mobile, et on a vu une vraie hausse des demandes.”</blockquote>
+          <figcaption>— Responsable marketing</figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <blockquote>“Process clair, conseils SEO concrets, et un design plus crédible. Très pro.”</blockquote>
+          <figcaption>— Dirigeant PME</figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <blockquote>“On a enfin un dashboard simple pour suivre nos KPI. Gain de temps énorme.”</blockquote>
+          <figcaption>— Ops / Gestion</figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact" aria-label="Contact">
+      <div class="section-title reveal">
+        <h2>Parlons de votre projet</h2>
+        <p>Un message suffit : on vous propose une approche claire, sans jargon.</p>
+      </div>
+
+
+
+      <div class="panel contact-panel reveal">
+        <div class="contact-grid">
+          <div>
+            <h3>Ce que vous gagnez</h3>
+            <p>
+              Un site plus rapide, un message plus clair, des pages plus convaincantes et une base technique solide.
+              Nous optimisons aussi les détails qui font la différence : structure des pages, CTA, performance,
+              SEO technique, sécurité et suivi des conversions.
+            </p>
+            <ul class="bullets">
+              <li>Audit express gratuit (si vous avez déjà un site)</li>
+              <li>Conseils concrets + estimation</li>
+              <li>Plan d’action et priorités</li>
+            </ul>
+          </div>
+
+
+
+          <div class="contact-box">
+            <div class="contact-item"><strong>E‑mail :</strong> agenceadeweb@gmail.com</div>
+            <div class="contact-item"><strong>Tél :</strong> +243 901733321</div>
+            <div class="contact-item"><strong>Zone :</strong> R.D.C & International</div>
+            <div class="contact-item"><strong>Disponibilité :</strong> lun–ven</div>
+            <a class="btn" href="https://wa.me/243901733321"><span>Demander un devis</span><span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq" aria-label="FAQ">
+      <div class="section-title reveal">
+        <h2>Questions fréquentes</h2>
+        <p>Les questions les plus fréquentes avant de démarrer.</p>
+      </div>
+
+
+      
+      <div class="panel faq-panel reveal">
+        <details class="faq-item">
+          <summary>Combien de temps pour créer un site ?</summary>
+          <p>Selon la taille : un site vitrine peut aller de 1 à 2 semaine , un e‑commerce de 2 à 3 semaines, application web  3 à 6 moi, application mobile 6 à 1 ans. On valide un planning dès le départ.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Est-ce que le site sera optimisé pour Google ?</summary>
+          <p>Oui : structure, balises, performance, maillage, contenus. On peut aussi gérer une stratégie SEO plus complète (mots‑clés, pages, suivi).</p>
+        </details>
+        <details class="faq-item">
+          <summary>Pouvez-vous améliorer un site existant ?</summary>
+          <p>Oui : refonte UI/UX, optimisation des performances, correction SEO technique, amélioration des conversions, maintenance et sécurisation.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Combien coute la creation d'un site web?</summary>
+          <p>Le budget depend du type de projet: site vitrine (400$ - 5 000$),site é-commerce (1000$ - 10 000$), aplication web complex(10 000$ -100 000$)</p>
+
+        </details>
+
+
+
+
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer>
+          <p>suivez nous sur les réseaux sociaux</p>
+      <nav class="social" aria-label="Réseaux sociaux">
+        <a class="icon-btn" href="https://www.facebook.com/Full stack kbl" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v3H7v3h3v8h3v-8h3l1-3h-4v-3c0-.6.4-1 1-1Z" fill="rgba(255,255,255,.9)"/>
+          </svg>
+        </a>
+
+        <a class="icon-btn" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Z" fill="rgba(255,255,255,.9)"/>
+            <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" fill="rgba(255,255,255,.9)"/>
+            <path d="M17.5 6.2a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z" fill="rgba(255,255,255,.9)"/>
+          </svg>
+        </a>
+
+        <a class="icon-btn" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6.5 6.8a1.9 1.9 0 1 0 0-3.8 1.9 1.9 0 0 0 0 3.8ZM5 21h3V9H5v12ZM10 9h3v1.7c.4-1 1.6-2 3.4-2 3 0 3.6 2 3.6 4.7V21h-3v-6.2c0-1.5 0-3-1.9-3s-2.2 1.4-2.2 2.9V21h-3V9Z" fill="rgba(255,255,255,.9)"/>
+          </svg>
+        </a>
+
+        <a class="icon-btn" href="https://wa.me/243901733321" target="_blank" rel="noopener" aria-label="Whatssap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4-.9l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Z" fill="rgba(255,255,255,.9)"/>
+            <path d="M16.7 13.7c-.3-.2-1.8-.9-2-.9s-.4-.2-.6.2-.7.9-.8 1-.3.2-.6 0a6.6 6.6 0 0 1-1.9-1.2 7 7 0 0 1-1.3-1.6c-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.6-1.7-.8-2.3c-.2-.6-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s.9 2.5 1 2.6c.1.2 1.8 2.7 4.3 3.8.6.3 1.1.5 1.5.6.6.2 1.1.2 1.5.1.5-.1 1.8-.7 2-1.4.2-.7.2-1.3.1-1.4 0-.2-.2-.2-.5-.4Z" fill="rgba(255,255,255,.9)"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+
+
+      
+      <div class="container footer-inner">
+      <div class="footnote">
+        <strong>ADEWEB</strong> — Agence de développement web.<br />
+        <span>© <span id="year"></span> Tous droits réservés.</span>
+      </div>
+       <p>Adresse :N°10  Avenue des Aieux Q/Salongo C/limete kishasa-rdc.</p>
+   
+  </footer>
+
+  <!-- Toast + Back to top -->
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <button class="to-top" id="toTop" type="button" aria-label="Retour en haut">↑</button>
+  
+
+<script>
+// assets/js/app.js
+
+// Helpers
+const $ = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+/* Year */
+const yearEl = $('#year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+/* Header style on scroll */
+const header = $('#siteHeader');
+function onScrollHeader() {
+  if (!header) return;
+  header.classList.toggle('is-scrolled', window.scrollY > 6);
+}
+onScrollHeader();
+window.addEventListener('scroll', onScrollHeader, { passive: true });
+
+/* Mobile nav toggle */
+const navToggle = $('#navToggle');
+const primaryNav = $('#primaryNav');
+
+function setNavOpen(open) {
+  if (!navToggle || !primaryNav) return;
+  primaryNav.classList.toggle('is-open', open);
+  navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  navToggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+}
+
+if (navToggle && primaryNav) {
+  navToggle.addEventListener('click', () => {
+    setNavOpen(!primaryNav.classList.contains('is-open'));
+  });
+
+  // Close menu when clicking a link
+  primaryNav.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if (a) setNavOpen(false);
+  });
+
+  // Close on Escape
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setNavOpen(false);
+  });
+}
+
+/* Reveal animation on scroll (IntersectionObserver) */
+const revealEls = $$('.reveal');
+if ('IntersectionObserver' in window && revealEls.length) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add('is-visible');
+    });
+  }, { threshold: 0.12 });
+
+  revealEls.forEach((el) => io.observe(el));
+} else {
+  revealEls.forEach((el) => el.classList.add('is-visible'));
+}
+
+/* Stagger animation for service cards */
+const cards = $$('.nav-card');
+cards.forEach((card, i) => {
+  setTimeout(() => card.classList.add('show'), 120 + i * 90);
+});
+
+/* Marquee: duplicate track + dynamic duration */
+const track = $('#track');
+function setMarqueeDuration() {
+  if (!track) return;
+  const w = track.scrollWidth;
+  const seconds = Math.max(18, Math.min(40, w / 180));
+  track.style.animationDuration = seconds + 's';
+}
+
+if (track) {
+  // Clone once for seamless loop
+  track.appendChild(track.cloneNode(true));
+  setMarqueeDuration();
+
+  let mqT = null;
+  window.addEventListener('resize', () => {
+    window.clearTimeout(mqT);
+    mqT = window.setTimeout(setMarqueeDuration, 120);
+  });
+}
+
+/* Back to top button */
+const toTop = $('#toTop');
+function onScrollToTop() {
+  if (!toTop) return;
+  toTop.classList.toggle('show', window.scrollY > 600);
+}
+onScrollToTop();
+window.addEventListener('scroll', onScrollToTop, { passive: true });
+
+if (toTop) {
+  toTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+/* Toast */
+const toast = $('#toast');
+let toastTimer = null;
+function showToast(message) {
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.add('show');
+  window.clearTimeout(toastTimer);
+  toastTimer = window.setTimeout(() => toast.classList.remove('show'), 3200);
+}
+
+/* Animated counters (KPI) */
+function animateNumber(el, to, duration = 900) {
+  const start = performance.now();
+  const from = 0;
+  const isFloat = String(to).includes('.');
+  const decimals = isFloat ? (String(to).split('.')[1]?.length || 1) : 0;
+
+  function tick(now) {
+    const t = Math.min(1, (now - start) / duration);
+    const eased = 1 - Math.pow(1 - t, 3); // easeOutCubic
+    const value = from + (to - from) * eased;
+    el.textContent = isFloat ? value.toFixed(decimals) : Math.round(value).toString();
+    if (t < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+const kpiEls = $$('[data-kpi]');
+if ('IntersectionObserver' in window && kpiEls.length) {
+  const ioKpi = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      if (el.dataset.done === '1') return;
+      el.dataset.done = '1';
+      const to = Number(el.getAttribute('data-kpi'));
+      animateNumber(el, to, 950);
+    });
+  }, { threshold: 0.35 });
+
+  kpiEls.forEach((el) => ioKpi.observe(el));
+} else {
+  kpiEls.forEach((el) => animateNumber(el, Number(el.getAttribute('data-kpi')), 950));
+}
+
+/* Small counter in hero stat (+60%) */
+const countEl = $('[data-count]');
+if (countEl) {
+  const to = Number(countEl.getAttribute('data-count'));
+  animateNumber(countEl, to, 900);
+}
+
+/* Projects filter */
+const chips = $$('.chip');
+const projectCards = $$('.project-card');
+
+function setFilter(filter) {
+  chips.forEach((c) => {
+    const active = c.dataset.filter === filter;
+    c.classList.toggle('active', active);
+    c.setAttribute('aria-selected', active ? 'true' : 'false');
+  });
+
+  projectCards.forEach((card) => {
+    const type = card.dataset.type;
+    const show = filter === 'all' || filter === type;
+    card.style.display = show ? '' : 'none';
+  });
+}
+
+chips.forEach((chip) => {
+  chip.addEventListener('click', () => setFilter(chip.dataset.filter));
+});
+
+/* Quick quote form (front validation + fake submit) */
+const form = $('#quickQuoteForm');
+
+function setError(name, msg) {
+  const err = $(`.error[data-for="${name}"]`);
+  if (err) err.textContent = msg || '';
+}
+
+function isEmail(v) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v || '').trim());
+}
+
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    const name = String(data.get('name') || '').trim();
+    const email = String(data.get('email') || '').trim();
+    const need = String(data.get('need') || '').trim();
+
+    let ok = true;
+
+    setError('name', '');
+    setError('email', '');
+    setError('need', '');
+
+    if (name.length < 2) { setError('name', 'Veuillez indiquer votre nom.'); ok = false; }
+    if (!isEmail(email)) { setError('email', 'Veuillez entrer un e‑mail valide.'); ok = false; }
+    if (!need) { setError('need', 'Veuillez sélectionner un type de projet.'); ok = false; }
+
+    if (!ok) {
+      showToast('Merci de corriger le formulaire.');
+      return;
+    }
+
+    // Ici vous brancherez votre PHP (envoi mail / DB).
+    // Démo : on simule un succès.
+    form.querySelectorAll('button, input, select, textarea').forEach((el) => el.disabled = true);
+
+    window.setTimeout(() => {
+      showToast('Demande envoyée. Nous vous contactons sous 24–48h.');
+      form.reset();
+      form.querySelectorAll('button, input, select, textarea').forEach((el) => el.disabled = false);
+    }, 650);
+  });
+}
+
+// Carousel
+let index = 0;
+const images = document.querySelectorAll(".carousel img");
+
+setInterval(() => {
+images[index].classList.remove("active");
+index = (index + 1) % images.length;
+images[index].classList.add("active");
+}, 3000);
+
+
+</script>
+
+
+  
+
+
+
+     <!-- TOPBAR -->
+<div style="position:fixed;top:0;left:0;right:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:  radial-gradient(800px 500px at 100% 10%, rgba(49,208,170,.18), transparent 55%), ;border-bottom:1px solid rgba(0,0,0,0.06);z-index:1000;">
+
+  <div style="font-weight:600;"> </div>
+
+  <!-- HAMBURGER -->
+  <div id="hamburger"
+       data-open="false"
+       onclick="
+         var drawer=document.getElementById('drawer');
+         var backdrop=document.getElementById('backdrop');
+         var open=this.getAttribute('data-open')==='true';
+
+         if(open){
+           drawer.style.right='-1000px';
+           backdrop.style.opacity='0';
+           backdrop.style.pointerEvents='none';
+           document.getElementById('bar1').style.transform='rotate(0)';
+           document.getElementById('bar1').style.top='0';
+           document.getElementById('bar2').style.opacity='1';
+           document.getElementById('bar3').style.transform='rotate(0)';
+           document.getElementById('bar3').style.top='12px';
+           this.setAttribute('data-open','false');
+         } else {
+           drawer.style.right='0px';
+           backdrop.style.opacity='1';
+           backdrop.style.pointerEvents='auto';
+           document.getElementById('bar1').style.transform='rotate(40deg)';
+           document.getElementById('bar1').style.top='6px';
+           document.getElementById('bar2').style.opacity='0';
+           document.getElementById('bar3').style.transform='rotate(-45deg)';
+           document.getElementById('bar3').style.top='6px';
+           this.setAttribute('data-open','true');
+         }
+       "
+       style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:1px solid rgba(0,0,0,0.1);border-radius:8px;">
+       
+    <div style="width:20px;height:14px;position:relative;">
+      <span id="bar1" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5  ;top:0;transition:.3s;"></span>
+      <span id="bar2" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5;top:6px;transition:.3s;"></span>
+      <span id="bar3" style="position:absolute;left:0;right:0;height:2px;background: #cbd5f5;top:12px;transition:.3s;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- BACKDROP -->
+<div id="backdrop"
+     onclick="
+       document.getElementById('drawer').style.right='-320px';
+       this.style.opacity='0';
+       this.style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+     "
+     style="position:fixed;inset:0;background:rgba(0,0,0,0.4);opacity:0;pointer-events:none;transition:.3s;z-index:998;">
+</div>
+
+<!-- DRAWER -->
+<div id="drawer"
+     style="position:fixed;top:0;right:-320px;width:200px;max-width:85%;height:100%;background: #0b1220  ;color:#fff;padding:20px;transition:.3s;z-index:999;display:flex;flex-direction:column;">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+    <h2 style="margin:0;font-size:18px;">Menu</h2>
+
+    <button onclick="
+       document.getElementById('drawer').style.right='-320px';
+       document.getElementById('backdrop').style.opacity='0';
+       document.getElementById('backdrop').style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+    "
+    style="background:none;border:1px solid rgba(255,255,255,0.2);color:#fff;padding:6px 8px;border-radius:6px;cursor:pointer;">
+      
+    </button>
+  </div>
+
+  <a href="index.html" style="color:#fff;text-decoration:none;margin:10px 0;">Accueil</a>
+  <a href="Nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">Services</a>
+  <a href="video.html" style="color:#fff;text-decoration:none;margin:10px 0;">publications</a>
+  <a href="contact.html" style="color:#fff;text-decoration:none;margin:10px 0;">notre equipe</a>
+  <a href="projet.html" style="color:#fff;text-decoration:none;margin:10px 0;">Projets</a>
+  <a href="image.html" style="color:#fff;text-decoration:none;margin:10px 0;">gallerie d'image</a>
+  <a href="about.html" style="color:#fff;text-decoration:none;margin:10px 0;">Apropos de Nous</a>
+  <a href="en savoir plus sur nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">en savoir plus</a>
+  <a href="https://wa.me/243901733321"
+     style="margin-top:auto;background:green;padding:10px;border-radius:8px;text-align:center;color:#fff;text-decoration:none;font-weight:bold;">
+     Contactez nous
+  </a>
+</div>
+
+<main style="padding:20px;max-width:900px;margin:auto;">
+  <h1></h1>
+  <p></p>
+</main>
+
+
+
+
+
+
+
+</body>
+</html>
+

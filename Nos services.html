@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Page stylée — Lumières amplifiées & animations globales</title>
+<link rel="stylesheet" href="style Nos services.css">
+</head>
+<body>
+  
+    <script src="nos service.js"></script>
+
+  <!-- Arrière-plan lumineux -->
+  <div class="bg-lights" aria-hidden="true">
+    <div class="light one"></div>
+    <div class="light two"></div>
+    <div class="light three"></div>
+    <div class="light four"></div>
+    <div class="light five"></div>
+    <div id="particles"></div>
+  </div>
+
+  <div class="wrap">
+    <aside class="sidebar">
+      <a class="logo" href="#">
+        <img src="logo.png" alt="Logo">
+        <div>
+          <div class="brand">ADEWEB</div>
+          <div class="tag">Créatif & Digital</div>
+        </div>
+      </a>
+    </aside>
+
+    <main class="main">
+      <section class="hero">
+        <div class="left">
+          <h1>Nos Services</h1>
+          <p>Decouvrez tout nos service.</p>
+        </div>
+      </section>
+
+      <div class="grid">
+        <article class="card">
+        <h3>Développement de Sites Web</h3>
+       <p>Nous créons des sites web sur mesure adaptés à vos besoins, que ce soit pour une vitrine, un blog ou une plateforme e-commerce.</p>
+        </article>
+        <article class="card">
+        <h3>Conception de Sites Responsifs</h3>
+        <p>Nos sites sont conçus pour être entièrement responsifs, garantissant une expérience utilisateur optimale sur tous les appareils (ordinateurs, tablettes, smartphones).</p>
+
+        </article>
+        <article class="card">
+       <h3>Développement e-Commerce</h3>
+        <p>Nous développons des solutions e-commerce performantes et sécurisées, incluant des systèmes de paiement intégrés et des fonctionnalités de gestion des stocks.</p>
+
+        </article>
+        <article class="card">
+          <h3>SEO (Optimisation pour les Moteurs de Recherche)</h3>
+        <p>Nous optimisons votre site pour le référencement naturel (SEO) afin d'améliorer votre visibilité sur les moteurs de recherche.</p>
+        </article>
+
+        <article class="card">
+        <h3>Maintenance et Support Technique</h3>
+        <p>Nous offrons des services de maintenance et de support technique pour assurer le bon fonctionnement de votre site web.</p>
+        </article>
+
+        <article class="card">
+         <h3>Développement d'Applications Web</h3>
+        <p>Nous développons des applications web interactives et dynamiques pour répondre à vos besoins spécifiques.</p>
+        </article>
+        
+        <article class="card">
+         <h3>Intégration de Systèmes</h3>
+        <p>Nous intégrons divers systèmes et API pour améliorer les fonctionnalités et l'efficacité de votre site web.</p>
+        </article>
+
+        <article class="card">
+           <h3>Consultation et Stratégie Digitale</h3>
+        <p>Nous vous aidons à définir votre stratégie digitale et à choisir les meilleures solutions pour atteindre vos objectifs.</p>
+        </article>
+
+         <article class="card">
+           <h3>Création de Contenu</h3>
+        <p>Nous proposons des services de création de contenu pour enrichir votre site et attirer l'engagement des visiteurs.</p>
+        </article>
+        
+        <article class="card">
+              <h3>Développement Mobile</h3>
+        <p>Nous développons des applications mobiles natives et hybrides pour Android et iOS, adaptées à votre entreprise.</p>
+        </article>
+
+         <article class="card">
+         <h3>Audit et Analyse de Site</h3>
+        <p>Nous réalisons des audits complets de votre site pour identifier les points d'amélioration en termes de performance, SEO et expérience utilisateur.</p>
+        </article>
+
+         <article class="card">
+           <h3>Formation et Ateliers</h3>
+        <p>Nous proposons des formations sur divers aspects du développement web, du SEO et de la gestion de contenu pour votre équipe.</p>
+        </article>
+
+        <article class="card">
+           <h3>Conception Graphique</h3>
+        <p>Nous offrons des services de design graphique pour créer des logos, des bannières, et d'autres éléments visuels pour votre marque.</p>
+        </article>
+
+        <article class="card">
+         <h3>Data analyse</h3>
+         <p>Nous analysons vos donnee pour identifier des tendances,des opportunités et de defis enfin d'orientés vos stratégies commerciales.</p>
+        </article>
+        
+      </div>
+
+    </main>
+  </div>
+
+   <p style="text-align: center;">    Adresse :N°10  Avenue des Aieux Q/Salongo ,C/limete kinshasa-rdc.</p>
+
+     <!-- TOPBAR -->
+<div style="position:fixed;top:0;left:0;right:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:  radial-gradient(800px 500px at 100% 10%, rgba(49,208,170,.18), transparent 55%), ;border-bottom:1px solid rgba(0,0,0,0.06);z-index:1000;">
+
+  <div style="font-weight:600;"> </div>
+
+  <!-- HAMBURGER -->
+  <div id="hamburger"
+       data-open="false"
+       onclick="
+         var drawer=document.getElementById('drawer');
+         var backdrop=document.getElementById('backdrop');
+         var open=this.getAttribute('data-open')==='true';
+
+         if(open){
+           drawer.style.right='-1000px';
+           backdrop.style.opacity='0';
+           backdrop.style.pointerEvents='none';
+           document.getElementById('bar1').style.transform='rotate(0)';
+           document.getElementById('bar1').style.top='0';
+           document.getElementById('bar2').style.opacity='1';
+           document.getElementById('bar3').style.transform='rotate(0)';
+           document.getElementById('bar3').style.top='12px';
+           this.setAttribute('data-open','false');
+         } else {
+           drawer.style.right='0px';
+           backdrop.style.opacity='1';
+           backdrop.style.pointerEvents='auto';
+           document.getElementById('bar1').style.transform='rotate(40deg)';
+           document.getElementById('bar1').style.top='6px';
+           document.getElementById('bar2').style.opacity='0';
+           document.getElementById('bar3').style.transform='rotate(-45deg)';
+           document.getElementById('bar3').style.top='6px';
+           this.setAttribute('data-open','true');
+         }
+       "
+       style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:1px solid rgba(0,0,0,0.1);border-radius:8px;">
+       
+    <div style="width:20px;height:14px;position:relative;">
+      <span id="bar1" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5  ;top:0;transition:.3s;"></span>
+      <span id="bar2" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5;top:6px;transition:.3s;"></span>
+      <span id="bar3" style="position:absolute;left:0;right:0;height:2px;background: #cbd5f5;top:12px;transition:.3s;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- BACKDROP -->
+<div id="backdrop"
+     onclick="
+       document.getElementById('drawer').style.right='-320px';
+       this.style.opacity='0';
+       this.style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+     "
+     style="position:fixed;inset:0;background:rgba(0,0,0,0.4);opacity:0;pointer-events:none;transition:.3s;z-index:998;">
+</div>
+
+<!-- DRAWER -->
+<div id="drawer"
+     style="position:fixed;top:0;right:-320px;width:200px;max-width:85%;height:100%;background: #0b1220  ;color:#fff;padding:20px;transition:.3s;z-index:999;display:flex;flex-direction:column;">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+    <h2 style="margin:0;font-size:18px;">Menu</h2>
+
+    <button onclick="
+       document.getElementById('drawer').style.right='-320px';
+       document.getElementById('backdrop').style.opacity='0';
+       document.getElementById('backdrop').style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+    "
+    style="background:none;border:1px solid rgba(255,255,255,0.2);color:#fff;padding:6px 8px;border-radius:6px;cursor:pointer;">
+      
+    </button>
+  </div>
+
+  
+  <a href="index.html" style="color:#fff;text-decoration:none;margin:10px 0;">Accueil</a>
+  <a href="Nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">Services</a>
+  <a href="video.html" style="color:#fff;text-decoration:none;margin:10px 0;">publications</a>
+  <a href="contact.html" style="color:#fff;text-decoration:none;margin:10px 0;">notre equipe</a>
+  <a href="projet.html" style="color:#fff;text-decoration:none;margin:10px 0;">Projets</a>
+  <a href="image.html" style="color:#fff;text-decoration:none;margin:10px 0;">gallerie d'image</a>
+  <a href="about.html" style="color:#fff;text-decoration:none;margin:10px 0;">Apropos de Nous</a>
+  <a href="en savoir plus sur nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">en savoir plus</a>
+  <a href="https://wa.me/243901733321"
+     style="margin-top:auto;background:green;padding:10px;border-radius:8px;text-align:center;color:#fff;text-decoration:none;font-weight:bold;">
+     Contactez nous
+  </a>
+</div>
+
+<main style="padding:20px;max-width:900px;margin:auto;">
+  <h1></h1>
+  <p></p>
+</main>
+</form>
+
+
+

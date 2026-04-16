@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADEWEB - Agence de développement web</title>
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<style>
+body {
+    scroll-behavior: smooth;
+}
+.hero-bg {
+    background: linear-gradient(120deg, #0f172a, #1e3a8a);
+}
+</style>
+</head>
+
+<body class="font-sans text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-white shadow-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold text-blue-700">En savoir plus sur nous</h1>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-bg text-white pt-32 pb-20 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+       
+        <p class="text-lg mb-8 text-gray-200">
+            ADEWEB accompagne les entreprises dans leur transformation digitale avec des solutions web sur mesure.
+        </p>
+    </div>
+</section>
+
+<!-- en savoir plus -->
+<section id="services" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h4 class="text-xl font-semibold mb-3">Qui sommes-Nous?</h4>
+            <p > Notre mission est de fournir des solutions web innovantes et de qualité qui aident nos clients à atteindre leurs objectifs commerciaux. Nous croyons que chaque entreprise mérite une présence en ligne forte et efficace.</p>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h4 class="text-xl font-semibold mb-3">Notre Équipe</h4>
+              <p >Nous sommes une équipe de professionnels passionnés et expérimentés qui travaillent ensemble pour offrir les meilleures solutions à nos clients. Chaque membre apporte une expertise unique, allant du développement à la stratégie marketing.</p>
+
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h4 class="text-xl font-semibold mb-3">Notre Expertise</h4>
+                <p>chez ADEWEB, nous combinons creativité et technologie pour offrir des solutions de devellopement web sur mesure.Notre équipe d'experts passionnés se specialise dans la creation de solution web performants,intuitif et adaptés à vos besoins specifiques.</p>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- Nos services -->
+<section id="about" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+            <h3 class="text-3xl font-bold mb-4">Nos services</h3>
+        <ul>
+            <li>Développement Web</li>
+            <li>Design UX/UI</li>
+            <li>Marketing Digital</li>
+            <li>Consultation en Stratégie Numérique</li>
+            <li>Support Technique</li>
+            <li>Développement d'Applications Web</li>
+            <li>Intégration de Systèmes</li>
+            <li>Consultation et Stratégie Digitale</li>
+            <li>Création de Contenu</li>
+            <li>Développement Mobile</li>
+            <li>Audit et Analyse de Site</li>
+            <li>Formation et Ateliers</li>
+            <li>Conception Graphique</li>
+            <li>Data analyse</li>
+        </ul>
+        </div>
+
+        <div>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
+                 class="rounded-xl shadow" alt="web development">
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="bg-blue-700 text-white py-16">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 text-center gap-8">
+        <div>
+            <h4 class="text-4xl font-bold">+50</h4>
+            <p>Projets réalisés</p>
+        </div>
+        <div>
+            <h4 class="text-4xl font-bold">+50</h4>
+            <p>Clients satisfaits</p>
+        </div>
+        <div>
+            <h4 class="text-4xl font-bold">2 ans</h4>
+            <p>d'expérience</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-bold mb-6">Contactez-nous</h3>
+        <p class="mb-8">Parlez-nous de votre projet 👇</p>
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h4 class="text-xl font-semibold mb-3">Contactez-Nous</h4>
+                <a href="https://wa.me/243901733321" target="_blank" class="bg-green-500 text-white px-3 py-1 rounded">WhatsApp</a>
+            </div>
+</section>
+
+
+     <!-- TOPBAR -->
+<div style="position:fixed;top:0;left:0;right:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:  radial-gradient(800px 500px at 100% 10%, rgba(49,208,170,.18), transparent 55%), ;border-bottom:1px solid rgba(0,0,0,0.06);z-index:1000;">
+
+  <div style="font-weight:600;"> </div>
+
+  <!-- HAMBURGER -->
+  <div id="hamburger"
+       data-open="false"
+       onclick="
+         var drawer=document.getElementById('drawer');
+         var backdrop=document.getElementById('backdrop');
+         var open=this.getAttribute('data-open')==='true';
+
+         if(open){
+           drawer.style.right='-1000px';
+           backdrop.style.opacity='0';
+           backdrop.style.pointerEvents='none';
+           document.getElementById('bar1').style.transform='rotate(0)';
+           document.getElementById('bar1').style.top='0';
+           document.getElementById('bar2').style.opacity='1';
+           document.getElementById('bar3').style.transform='rotate(0)';
+           document.getElementById('bar3').style.top='12px';
+           this.setAttribute('data-open','false');
+         } else {
+           drawer.style.right='0px';
+           backdrop.style.opacity='1';
+           backdrop.style.pointerEvents='auto';
+           document.getElementById('bar1').style.transform='rotate(40deg)';
+           document.getElementById('bar1').style.top='6px';
+           document.getElementById('bar2').style.opacity='0';
+           document.getElementById('bar3').style.transform='rotate(-45deg)';
+           document.getElementById('bar3').style.top='6px';
+           this.setAttribute('data-open','true');
+         }
+       "
+       style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:1px solid rgba(0,0,0,0.1);border-radius:8px;">
+       
+    <div style="width:20px;height:14px;position:relative;">
+      <span id="bar1" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5  ;top:0;transition:.3s;"></span>
+      <span id="bar2" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5;top:6px;transition:.3s;"></span>
+      <span id="bar3" style="position:absolute;left:0;right:0;height:2px;background: #cbd5f5;top:12px;transition:.3s;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- BACKDROP -->
+<div id="backdrop"
+     onclick="
+       document.getElementById('drawer').style.right='-320px';
+       this.style.opacity='0';
+       this.style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+     "
+     style="position:fixed;inset:0;background:rgba(0,0,0,0.4);opacity:0;pointer-events:none;transition:.3s;z-index:998;">
+</div>
+
+<!-- DRAWER -->
+<div id="drawer"
+     style="position:fixed;top:0;right:-320px;width:200px;max-width:85%;height:100%;background: #0b1220  ;color:#fff;padding:20px;transition:.3s;z-index:999;display:flex;flex-direction:column;">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+    <h2 style="margin:0;font-size:18px;">Menu</h2>
+
+    <button onclick="
+       document.getElementById('drawer').style.right='-320px';
+       document.getElementById('backdrop').style.opacity='0';
+       document.getElementById('backdrop').style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+    "
+    style="background:none;border:1px solid rgba(255,255,255,0.2);color:#fff;padding:6px 8px;border-radius:6px;cursor:pointer;">
+      
+    </button>
+  </div>
+  <a href="index.html" style="color:#fff;text-decoration:none;margin:10px 0;">Accueil</a>
+  <a href="Nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">Services</a>
+  <a href="video.html" style="color:#fff;text-decoration:none;margin:10px 0;">publications</a>
+  <a href="contact.html" style="color:#fff;text-decoration:none;margin:10px 0;">notre equipe</a>
+  <a href="projet.html" style="color:#fff;text-decoration:none;margin:10px 0;">Projets</a>
+  <a href="image.html" style="color:#fff;text-decoration:none;margin:10px 0;">gallerie d'image</a>
+  <a href="about.html" style="color:#fff;text-decoration:none;margin:10px 0;">Apropos de Nous</a>
+  <a href="en savoir plus sur nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">en savoir plus</a>
+  <a href="https://wa.me/243901733321"
+     style="margin-top:auto;background:green;padding:10px;border-radius:8px;text-align:center;color:#fff;text-decoration:none;font-weight:bold;">
+     Contactez nous
+  </a>
+</div>
+
+<main style="padding:20px;max-width:900px;margin:auto;">
+
+
+
+</body>
+</html>
+

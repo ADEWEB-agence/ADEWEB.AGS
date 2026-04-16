@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projets | ADEWEB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet.css">
+
+</head>
+<body>
+
+
+<section class="wrapper">
+
+    <!-- Header -->
+    <header class="header">
+        <span>Nos réalisations</span>
+        <h1>Projets & Démonstrations</h1>
+        <p>
+            ADEWEB est une agence de développement web et data en pleine croissance.
+            Les projets ci‑dessous sont des <strong>démonstrations internes et techniques</strong>
+            conçues pour mettre en valeur notre expertise en web, applications et data analytics.
+        </p>
+    </header>
+
+    <!-- Projects -->
+    <div class="projects">
+
+        <article class="card">
+            <span class="badge">Web Development</span>
+            <h3>Site vitrine corporate</h3>
+            <p>
+                Conception d’un site institutionnel moderne visant à renforcer l’image
+                de marque et la crédibilité digitale d’une entreprise.
+            </p>
+            <ul class="features">
+                <li>Design premium & responsive</li>
+                <li>Optimisation SEO & performance</li>
+                <li>Structure claire orientée conversion</li>
+            </ul>
+            <div class="tech">HTML • CSS • JavaScript</div>
+        </article>
+
+        <article class="card">
+            <span class="badge">E‑commerce</span>
+            <h3>Boutique en ligne professionnelle</h3>
+            <p>
+                Plateforme e‑commerce complète avec une expérience utilisateur fluide
+                et une gestion simplifiée des ventes.
+            </p>
+            <ul class="features">
+                <li>Gestion produits & commandes</li>
+                <li>Paiement sécurisé</li>
+                <li>Interface administrateur</li>
+            </ul>
+            <div class="tech">WooCommerce • Laravel</div>
+        </article>
+
+        <article class="card">
+            <span class="badge">Application Web</span>
+            <h3>Application de gestion intelligente</h3>
+            <p>
+                Application web permettant le suivi et l’analyse des données via
+                un tableau de bord interactif.
+            </p>
+            <ul class="features">
+                <li>Authentification sécurisée</li>
+                <li>Dashboard dynamique</li>
+                <li>Architecture scalable</li>
+            </ul>
+            <div class="tech">React • Node.js</div>
+        </article>
+
+        <article class="card">
+            <span class="badge">Data Analytics</span>
+            <h3>Projet Data Analyst & BI</h3>
+            <p>
+                Analyse avancée de données afin de transformer les données brutes
+                en indicateurs stratégiques exploitables.
+            </p>
+            <ul class="features">
+                <li>Nettoyage & préparation des données</li>
+                <li>Analyse exploratoire (EDA)</li>
+                <li>Visualisation & dashboards BI</li>
+            </ul>
+            <div class="tech">Python • SQL • Power BI / Tableau</div>
+        </article>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+        <h2>Vous etes une entreprise,une ONG, une fondantion ou une institutions publique ou para-etetique?</h2>
+        <p>
+            ADEWEB vous accompagne dans la conception de solutions web et data
+            performantes, évolutives et adaptées à vos objectifs business.
+        </p>
+        <a href="devis.php">Demander un devis</a>
+    </div>
+
+   
+
+    <div class="footer"> 
+       <p>Adresse :N°10  Avenue des Aieux Q/Salongo C/limete kinshasa-rdc.</p>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- TOPBAR -->
+<div style="position:fixed;top:0;left:0;right:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:  radial-gradient(800px 500px at 100% 10%, rgba(49,208,170,.18), transparent 55%), ;border-bottom:1px solid rgba(0,0,0,0.06);z-index:1000;">
+
+  <div style="font-weight:600;"> </div>
+
+  <!-- HAMBURGER -->
+  <div id="hamburger"
+       data-open="false"
+       onclick="
+         var drawer=document.getElementById('drawer');
+         var backdrop=document.getElementById('backdrop');
+         var open=this.getAttribute('data-open')==='true';
+
+         if(open){
+           drawer.style.right='-1000px';
+           backdrop.style.opacity='0';
+           backdrop.style.pointerEvents='none';
+           document.getElementById('bar1').style.transform='rotate(0)';
+           document.getElementById('bar1').style.top='0';
+           document.getElementById('bar2').style.opacity='1';
+           document.getElementById('bar3').style.transform='rotate(0)';
+           document.getElementById('bar3').style.top='12px';
+           this.setAttribute('data-open','false');
+         } else {
+           drawer.style.right='0px';
+           backdrop.style.opacity='1';
+           backdrop.style.pointerEvents='auto';
+           document.getElementById('bar1').style.transform='rotate(40deg)';
+           document.getElementById('bar1').style.top='6px';
+           document.getElementById('bar2').style.opacity='0';
+           document.getElementById('bar3').style.transform='rotate(-45deg)';
+           document.getElementById('bar3').style.top='6px';
+           this.setAttribute('data-open','true');
+         }
+       "
+       style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:1px solid rgba(0,0,0,0.1);border-radius:8px;">
+       
+    <div style="width:20px;height:14px;position:relative;">
+      <span id="bar1" style="position:absolute;left:0;right:0;height:2px;background: black  ;top:0;transition:.3s;"></span>
+      <span id="bar2" style="position:absolute;left:0;right:0;height:2px;background: black  ;top:6px;transition:.3s;"></span>
+      <span id="bar3" style="position:absolute;left:0;right:0;height:2px;background: black  ;top:12px;transition:.3s;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- BACKDROP -->
+<div id="backdrop"
+     onclick="
+       document.getElementById('drawer').style.right='-320px';
+       this.style.opacity='0';
+       this.style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+     "
+     style="position:fixed;inset:0;background:rgba(0,0,0,0.4);opacity:0;pointer-events:none;transition:.3s;z-index:998;">
+</div>
+
+<!-- DRAWER -->
+<div id="drawer"
+     style="position:fixed;top:0;right:-320px;width:200px;max-width:85%;height:100%;background: #0b1220  ;color:#fff;padding:20px;transition:.3s;z-index:999;display:flex;flex-direction:column;">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+    <h2 style="margin:0;font-size:18px;">Menu</h2>
+
+    <button onclick="
+       document.getElementById('drawer').style.right='-320px';
+       document.getElementById('backdrop').style.opacity='0';
+       document.getElementById('backdrop').style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+    "
+    style="background:none;border:1px solid rgba(255,255,255,0.2);color:#fff;padding:6px 8px;border-radius:6px;cursor:pointer;">
+      
+    </button>
+  </div>
+
+ 
+  <a href="index.html" style="color:#fff;text-decoration:none;margin:10px 0;">Accueil</a>
+  <a href="Nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">Services</a>
+  <a href="video.html" style="color:#fff;text-decoration:none;margin:10px 0;">publications</a>
+  <a href="contact.html" style="color:#fff;text-decoration:none;margin:10px 0;">notre equipe</a>
+  <a href="projet.html" style="color:#fff;text-decoration:none;margin:10px 0;">Projets</a>
+  <a href="image.html" style="color:#fff;text-decoration:none;margin:10px 0;">gallerie d'image</a>
+  <a href="about.html" style="color:#fff;text-decoration:none;margin:10px 0;">Apropos Nous</a>
+  <a href="en savoir plus sur nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">en savoir plus</a>
+  <a href="https://wa.me/243901733321"
+     style="margin-top:auto;background:green;padding:10px;border-radius:8px;text-align:center;color:#fff;text-decoration:none;font-weight:bold;">
+     Contactez nous
+  </a>
+</div>
+
+<main style="padding:20px;max-width:900px;margin:auto;">
+  <h1></h1>
+  <p></p>
+</main>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+     <!-- TOPBAR -->
+<div style="position:fixed;top:0;left:0;right:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:  radial-gradient(800px 500px at 100% 10%, rgba(49,208,170,.18), transparent 55%), ;border-bottom:1px solid rgba(0,0,0,0.06);z-index:1000;">
+
+  <div style="font-weight:600;"></div>
+
+  <!-- HAMBURGER -->
+  <div id="hamburger"
+       data-open="false"
+       onclick="
+         var drawer=document.getElementById('drawer');
+         var backdrop=document.getElementById('backdrop');
+         var open=this.getAttribute('data-open')==='true';
+
+         if(open){
+           drawer.style.right='-1000px';
+           backdrop.style.opacity='0';
+           backdrop.style.pointerEvents='none';
+           document.getElementById('bar1').style.transform='rotate(0)';
+           document.getElementById('bar1').style.top='0';
+           document.getElementById('bar2').style.opacity='1';
+           document.getElementById('bar3').style.transform='rotate(0)';
+           document.getElementById('bar3').style.top='12px';
+           this.setAttribute('data-open','false');
+         } else {
+           drawer.style.right='0px';
+           backdrop.style.opacity='1';
+           backdrop.style.pointerEvents='auto';
+           document.getElementById('bar1').style.transform='rotate(40deg)';
+           document.getElementById('bar1').style.top='6px';
+           document.getElementById('bar2').style.opacity='0';
+           document.getElementById('bar3').style.transform='rotate(-45deg)';
+           document.getElementById('bar3').style.top='6px';
+           this.setAttribute('data-open','true');
+         }
+       "
+       style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:1px solid rgba(0,0,0,0.1);border-radius:8px;">
+       
+    <div style="width:20px;height:14px;position:relative;">
+      <span id="bar1" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5  ;top:0;transition:.3s;"></span>
+      <span id="bar2" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5;top:6px;transition:.3s;"></span>
+      <span id="bar3" style="position:absolute;left:0;right:0;height:2px;background: #cbd5f5;top:12px;transition:.3s;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- BACKDROP -->
+<div id="backdrop"
+     onclick="
+       document.getElementById('drawer').style.right='-320px';
+       this.style.opacity='0';
+       this.style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+     "
+     style="position:fixed;inset:0;background:rgba(0,0,0,0.4);opacity:0;pointer-events:none;transition:.3s;z-index:998;">
+</div>
+
+<!-- DRAWER -->
+<div id="drawer"
+     style="position:fixed;top:0;right:-320px;width:200px;max-width:85%;height:100%;background: #0b1220  ;color:#fff;padding:20px;transition:.3s;z-index:999;display:flex;flex-direction:column;">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+    <h2 style="margin:0;font-size:18px;">Menu</h2>
+
+    <button onclick="
+       document.getElementById('drawer').style.right='-320px';
+       document.getElementById('backdrop').style.opacity='0';
+       document.getElementById('backdrop').style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+    "
+    style="background:none;border:1px solid rgba(255,255,255,0.2);color:#fff;padding:6px 8px;border-radius:6px;cursor:pointer;">
+      
+    </button>
+  </div>
+
+  <a href="acceil.php" style="color:#fff;text-decoration:none;margin:10px 0;">Accueil</a>
+  <a href="Nos services.php" style="color:#fff;text-decoration:none;margin:10px 0;">Services</a>
+  <a href="video.php" style="color:#fff;text-decoration:none;margin:10px 0;">publications</a>
+  <a href="contact.php" style="color:#fff;text-decoration:none;margin:10px 0;">notre equipe</a>
+  <a href="projet.php" style="color:#fff;text-decoration:none;margin:10px 0;">Projets</a>
+  <a href="image.php" style="color:#fff;text-decoration:none;margin:10px 0;">gallerie d'image</a>
+  <a href="about.php" style="color:#fff;text-decoration:none;margin:10px 0;">Apropos</a>
+  <a href="formulaire_contact.php"
+     style="margin-top:auto;background:green;padding:10px;border-radius:8px;text-align:center;color:#fff;text-decoration:none;font-weight:bold;">
+     Contact
+  </a>
+</div>
+
+<main style="padding:20px;max-width:900px;margin:auto;">
+  <h1></h1>
+  <p></p>
+</main>
+</form>
+
+
+
+
+</body>
+</html>
+

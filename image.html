@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie - Agent Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleimage.css">
+   <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        /* SECTION HERO */
+        .hero {
+            position: relative;
+            height: 50vh;
+            background: url('assets/e-comerces.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 102, 255, 0.7);
+        }
+
+        .hero h1 {
+            position: relative;
+            z-index: 2;
+            font-size: 2.5rem;
+        }
+
+        /* GALERIE */
+        .gallery {
+            background: #0f172a;
+            padding: 60px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            display: block;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Effet overlay sur image */
+        .gallery-item::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 102, 255, 0.4);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<section class="hero">
+    <div class="overlay"></div>
+    <h1>Notre Galerie d’Images</h1>
+</section>
+
+<section class="gallery">
+    <div class="gallery-item">
+        <img src="appliweb.jpg" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="dessing.jpg" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="e-comerces.jpg" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="sitevitrine.jpg" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="bien.jpg" alt="gallery d'image">
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="">
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-16 text-center">
+    <h2 class="text-3xl font-bold mb-8">Gallery</h2>
+    <div class="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <img src="https://picsum.photos/300?1">
+        <img src="https://picsum.photos/300?2">
+        <img src="https://picsum.photos/300?3">
+        <img src="https://picsum.photos/300?4">
+    </div>
+</section>
+
+
+
+
+
+
+
+     <!-- TOPBAR -->
+<div style="position:fixed;top:0;left:0;right:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:  radial-gradient(800px 500px at 100% 10%, rgba(49,208,170,.18), transparent 55%), ;border-bottom:1px solid rgba(0,0,0,0.06);z-index:1000;">
+
+  <div style="font-weight:600;"></div>
+
+  <!-- HAMBURGER -->
+  <div id="hamburger"
+       data-open="false"
+       onclick="
+         var drawer=document.getElementById('drawer');
+         var backdrop=document.getElementById('backdrop');
+         var open=this.getAttribute('data-open')==='true';
+
+         if(open){
+           drawer.style.right='-1000px';
+           backdrop.style.opacity='0';
+           backdrop.style.pointerEvents='none';
+           document.getElementById('bar1').style.transform='rotate(0)';
+           document.getElementById('bar1').style.top='0';
+           document.getElementById('bar2').style.opacity='1';
+           document.getElementById('bar3').style.transform='rotate(0)';
+           document.getElementById('bar3').style.top='12px';
+           this.setAttribute('data-open','false');
+         } else {
+           drawer.style.right='0px';
+           backdrop.style.opacity='1';
+           backdrop.style.pointerEvents='auto';
+           document.getElementById('bar1').style.transform='rotate(40deg)';
+           document.getElementById('bar1').style.top='6px';
+           document.getElementById('bar2').style.opacity='0';
+           document.getElementById('bar3').style.transform='rotate(-45deg)';
+           document.getElementById('bar3').style.top='6px';
+           this.setAttribute('data-open','true');
+         }
+       "
+       style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:1px solid rgba(0,0,0,0.1);border-radius:8px;">
+       
+    <div style="width:20px;height:14px;position:relative;">
+      <span id="bar1" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5  ;top:0;transition:.3s;"></span>
+      <span id="bar2" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5;top:6px;transition:.3s;"></span>
+      <span id="bar3" style="position:absolute;left:0;right:0;height:2px;background: #cbd5f5;top:12px;transition:.3s;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- BACKDROP -->
+<div id="backdrop"
+     onclick="
+       document.getElementById('drawer').style.right='-320px';
+       this.style.opacity='0';
+       this.style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+     "
+     style="position:fixed;inset:0;background:rgba(0,0,0,0.4);opacity:0;pointer-events:none;transition:.3s;z-index:998;">
+</div>
+
+<!-- DRAWER -->
+<div id="drawer"
+     style="position:fixed;top:0;right:-320px;width:200px;max-width:85%;height:100%;background: #0b1220  ;color:#fff;padding:20px;transition:.3s;z-index:999;display:flex;flex-direction:column;">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+    <h2 style="margin:0;font-size:18px;">Menu</h2>
+
+    <button onclick="
+       document.getElementById('drawer').style.right='-320px';
+       document.getElementById('backdrop').style.opacity='0';
+       document.getElementById('backdrop').style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+    "
+    style="background:none;border:1px solid rgba(255,255,255,0.2);color:#fff;padding:6px 8px;border-radius:6px;cursor:pointer;">
+      
+    </button>
+  </div>
+ 
+  <a href="index.html" style="color:#fff;text-decoration:none;margin:10px 0;">Accueil</a>
+  <a href="Nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">Services</a>
+  <a href="video.html" style="color:#fff;text-decoration:none;margin:10px 0;">publications</a>
+  <a href="contact.html" style="color:#fff;text-decoration:none;margin:10px 0;">notre equipe</a>
+  <a href="projet.html" style="color:#fff;text-decoration:none;margin:10px 0;">Projets</a>
+  <a href="image.html" style="color:#fff;text-decoration:none;margin:10px 0;">gallerie d'image</a>
+  <a href="about.html" style="color:#fff;text-decoration:none;margin:10px 0;">Apropos de Nous</a>
+  <a href="en savoir plus sur nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">en savoir plus</a>
+  <a href="https://wa.me/243901733321"
+     style="margin-top:auto;background:green;padding:10px;border-radius:8px;text-align:center;color:#fff;text-decoration:none;font-weight:bold;">
+     Contactez nous
+  </a>
+</div>
+
+<main style="padding:20px;max-width:900px;margin:auto;">
+
+
+</body>
+</html>

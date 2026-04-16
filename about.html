@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADEWEB - Agence Web</title>
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white shadow fixed w-full z-50">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <h1 class="text-2xl font-bold text-blue-600">A-propos de nous</h1>
+
+      <a href="https://wa.me/243901733321" target="_blank" class="bg-green-500 text-white px-3 py-1 rounded">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ESPACE HAUT -->
+<div class="h-20"></div>
+
+<!-- HERO + CAROUSEL -->
+<section class="relative h-screen flex items-center justify-center bg-gray-900 text-white">
+
+  <div class="absolute inset-0">
+    <img id="carousel" src="https://picsum.photos/1200/800?1" class="w-full h-full object-cover opacity-60">
+  </div>
+
+  <div class="relative text-center">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">Bienvenue chez ADEWEB</h2>
+    <p class="text-lg">Création de sites web modernes et professionnels</p>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="apropos" class="py-16 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-4">notre mission</h2>
+  <p>Notre mission est de fournir des solutions web innovantes et de qualité qui aident nos clients à atteindre leurs objectifs commerciaux. Nous croyons que chaque entreprise mérite une présence en ligne forte et efficace.</p>
+</section>
+
+<!--nos valeur -->
+<section id="nos valeur" class="py-16 bg-gray-100 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-4">nos valeur</h2>
+            <ul>
+                <li><strong>Innovation</strong> : Nous restons à la pointe des dernières technologies et tendances pour offrir des solutions modernes.</li>
+                <li><strong>Qualité</strong> : Nous nous engageons à livrer des produits de haute qualité qui répondent aux attentes de nos clients.</li>
+                <li><strong>Collaboration</strong> : Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs besoins et développer des solutions sur mesure.</li>
+                <li><strong>Intégrité</strong> : Nous menons nos affaires avec transparence et honnêteté, établissant des relations de confiance avec nos clients.</li>
+            </ul>
+</section>
+
+<!-- Notre Équipe -->
+<section id=" Notre Équipe" class="py-16 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-8">Notre Équipe</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 shadow rounded">
+    <p>Nous sommes une équipe de professionnels passionnés et expérimentés qui travaillent ensemble pour offrir les meilleures solutions à nos clients.
+    Chaque membre apporte une expertise unique, allant du développement à la stratégie marketing.</p>
+    </div>
+</section>
+
+<!--Notre Histoire -->
+<section id="projects" class="py-16 bg-gray-100 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-8">Notre Histoire</h2>
+            <p>Notre Histoire est celle d'une agence jeune,mais sructurée autour d'une mission: transformer des besoins réel en solution web efficace. <br>
+            ADEWEB est fondée en republique democratique du congo pour acompagner les entrepreneurs,PME,associations et institutions dans la creation de 
+            sites web et d'outils numeriques. <br>
+            Nous croyons qu'un bon site ne se limite pas au desing: il doit étre clair,rapide,sécurisé et pensé pour convertir les visiteurs en clients.
+            Nous construisons notre réputation projet aprés projet, avec sérieux,écoute et amelioration continue.</p>
+</section>
+
+
+<!--Notre Histoire -->
+<section id="projects" class="py-16 bg-gray-100 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-8">Contactez-Nous</h2>
+  <p>Pour en savoir plus sur nos services ou discuter de votre projet, n'hésitez pas à nous contacter. Nous serions ravis de vous aider à concrétiser vos idées.</p>
+
+</section>
+
+
+<!-- Nos Réalisations -->
+<section id="gallery" class="py-16 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-8">Nos Réalisations</h2>
+
+  <div class="grid md:grid-cols-3 gap-4">
+    <img src="https://picsum.photos/300?1" class="rounded">
+    <img src="https://picsum.photos/300?2" class="rounded">
+    <img src="https://picsum.photos/300?3" class="rounded">
+  </div>
+</section>
+
+
+
+
+<!-- SCRIPT CAROUSEL -->
+<script>
+const images = [
+  "https://picsum.photos/1200/800?1",
+  "https://picsum.photos/1200/800?2",
+  "https://picsum.photos/1200/800?3"
+];
+
+let index = 0;
+const carousel = document.getElementById("carousel");
+
+setInterval(() => {
+  index = (index + 1) % images.length;
+  carousel.src = images[index];
+}, 4000);
+</script>
+
+   
+     <!-- TOPBAR -->
+<div style="position:fixed;top:0;left:0;right:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:  radial-gradient(800px 500px at 100% 10%, rgba(49,208,170,.18), transparent 55%), ;border-bottom:1px solid rgba(0,0,0,0.06);z-index:1000;">
+
+  <div style="font-weight:600;"> </div>
+
+  <!-- HAMBURGER -->
+  <div id="hamburger"
+       data-open="false"
+       onclick="
+         var drawer=document.getElementById('drawer');
+         var backdrop=document.getElementById('backdrop');
+         var open=this.getAttribute('data-open')==='true';
+
+         if(open){
+           drawer.style.right='-1000px';
+           backdrop.style.opacity='0';
+           backdrop.style.pointerEvents='none';
+           document.getElementById('bar1').style.transform='rotate(0)';
+           document.getElementById('bar1').style.top='0';
+           document.getElementById('bar2').style.opacity='1';
+           document.getElementById('bar3').style.transform='rotate(0)';
+           document.getElementById('bar3').style.top='12px';
+           this.setAttribute('data-open','false');
+         } else {
+           drawer.style.right='0px';
+           backdrop.style.opacity='1';
+           backdrop.style.pointerEvents='auto';
+           document.getElementById('bar1').style.transform='rotate(40deg)';
+           document.getElementById('bar1').style.top='6px';
+           document.getElementById('bar2').style.opacity='0';
+           document.getElementById('bar3').style.transform='rotate(-45deg)';
+           document.getElementById('bar3').style.top='6px';
+           this.setAttribute('data-open','true');
+         }
+       "
+       style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:1px solid rgba(0,0,0,0.1);border-radius:8px;">
+       
+    <div style="width:20px;height:14px;position:relative;">
+      <span id="bar1" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5  ;top:0;transition:.3s;"></span>
+      <span id="bar2" style="position:absolute;left:0;right:0;height:2px;background:  #cbd5f5;top:6px;transition:.3s;"></span>
+      <span id="bar3" style="position:absolute;left:0;right:0;height:2px;background: #cbd5f5;top:12px;transition:.3s;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- BACKDROP -->
+<div id="backdrop"
+     onclick="
+       document.getElementById('drawer').style.right='-320px';
+       this.style.opacity='0';
+       this.style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+     "
+     style="position:fixed;inset:0;background:rgba(0,0,0,0.4);opacity:0;pointer-events:none;transition:.3s;z-index:998;">
+</div>
+
+<!-- DRAWER -->
+<div id="drawer"
+     style="position:fixed;top:0;right:-320px;width:200px;max-width:85%;height:100%;background: #0b1220  ;color:#fff;padding:20px;transition:.3s;z-index:999;display:flex;flex-direction:column;">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+    <h2 style="margin:0;font-size:18px;">Menu</h2>
+
+    <button onclick="
+       document.getElementById('drawer').style.right='-320px';
+       document.getElementById('backdrop').style.opacity='0';
+       document.getElementById('backdrop').style.pointerEvents='none';
+       document.getElementById('bar1').style.transform='rotate(0)';
+       document.getElementById('bar1').style.top='0';
+       document.getElementById('bar2').style.opacity='1';
+       document.getElementById('bar3').style.transform='rotate(0)';
+       document.getElementById('bar3').style.top='12px';
+       document.getElementById('hamburger').setAttribute('data-open','false');
+    "
+    style="background:none;border:1px solid rgba(255,255,255,0.2);color:#fff;padding:6px 8px;border-radius:6px;cursor:pointer;">
+      
+    </button>
+  </div>
+  <a href="index.html" style="color:#fff;text-decoration:none;margin:10px 0;">Accueil</a>
+  <a href="Nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">Services</a>
+  <a href="video.html" style="color:#fff;text-decoration:none;margin:10px 0;">publications</a>
+  <a href="contact.html" style="color:#fff;text-decoration:none;margin:10px 0;">notre equipe</a>
+  <a href="projet.html" style="color:#fff;text-decoration:none;margin:10px 0;">Projets</a>
+  <a href="image.html" style="color:#fff;text-decoration:none;margin:10px 0;">gallerie d'image</a>
+  <a href="about.html" style="color:#fff;text-decoration:none;margin:10px 0;">Apropos</a>
+  <a href="en savoir plus sur nos services.html" style="color:#fff;text-decoration:none;margin:10px 0;">en savoir plus</a>
+  <a href="https://wa.me/243901733321"
+     style="margin-top:auto;background:green;padding:10px;border-radius:8px;text-align:center;color:#fff;text-decoration:none;font-weight:bold;">
+     Contactez nous
+  </a>
+</div>
+
+<main style="padding:20px;max-width:900px;margin:auto;">
+    
+</body>
+</html>

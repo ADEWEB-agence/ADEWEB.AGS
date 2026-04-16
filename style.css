@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align:tex;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Aligne verticalement le logo et la barre de navigation */
+    justify-content: space-between; /* Espace entre le logo et la barre de navigation */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px; /* Ajuste la taille du logo selon tes préférences */
+}
+
+.navbar {
+    /* Appliquer styles à la barre de navigation */
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    background: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background: #0056b3;
+}
+
+main {
+    padding: 20px;
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
