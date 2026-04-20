@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
-    color: white;
+    color: black;
 }
 
 /* Overlay sombre */
@@ -15,12 +15,8 @@ body::before {
     z-index: -1;
 }
 
-
-
-
-
 h1 {
-    color: #333;
+    color: khaki;
     text-align: center;
 }
 .team-member:hover {
