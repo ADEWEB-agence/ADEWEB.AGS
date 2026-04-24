@@ -79,6 +79,37 @@
 
 
      html { scroll-behavior: smooth; }
+
+
+
+ /* ils nous font comfiance */
+
+/* Animation de changement de couleur */
+@keyframes bgShift {
+    0% { background-color: #1e3a8a; }   /* bleu */
+    33% { background-color: #dc2626; }  /* rouge */
+    66% { background-color: #f3f4f6; }  /* blanc */
+    100% { background-color: #1e3a8a; }
+}
+
+/* Animation zoom */
+@keyframes zoomEffect {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.section-bg {
+    animation: bgShift 10s infinite;
+    transition: background-color 1s ease;
+}
+
+.zoom-img {
+    animation: zoomEffect 8s infinite alternate ease-in-out;
+}
+
+
+  
+  
 </style>
 
 
@@ -279,12 +310,43 @@
           <p>Le budget depend du type de projet: site vitrine (400$ - 5 000$),site é-commerce (1000$ - 10 000$), aplication web complex(10 000$ -100 000$)</p>
 
         </details>
-
-
-
-
       </div>
     </section>
+
+     <!-- ils nous font comfiances -->
+  <section class="section-bg w-full py-16 px-6 flex items-center justify-center">
+    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
+
+        <!-- Image -->
+        <div class="overflow-hidden rounded-2xl shadow-xl">
+            <img 
+                src="client.jpg"
+                alt="Client satisfait"
+                class="zoom-img w-full h-full object-cover"
+            >
+        </div>
+
+        <!-- Texte -->
+        <div class="text-center md:text-left">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                Ils nous font confiance
+            </h2>
+
+            <p class="text-lg text-gray-800 mb-6">
+                Nous accompagnons des entrepreneurs ambitieux et des entreprises modernes 
+                dans la création de solutions digitales performantes. Notre expertise en 
+                développement web permet de transformer vos idées en projets concrets, 
+                élégants et efficaces.
+            </p>
+
+            <p class="text-md text-gray-700">
+                Rejoignez ceux qui ont déjà franchi le cap et propulsez votre présence en ligne 
+                avec une agence qui comprend vos besoins.
+            </p>
+        </div>
+
+    </div>
+</section>
 
 
 
