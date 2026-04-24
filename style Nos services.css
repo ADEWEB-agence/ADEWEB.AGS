@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
-    color: #020617;
+    color: blanchedalmond;
 }
 
 /* NAV */
@@ -28,13 +28,13 @@ header {
 .hero h1 {
     font-size: 3rem;
     animation: fadeUp 1s ease forwards;
-    color: black;
+    color: blanchedalmond;
 }
 
 .hero p {
     opacity: 0;
     animation: fadeUp 1.5s ease forwards;
-    color: #020617;
+    color: blanchedalmond;
 }
 
 /* SERVICES */
